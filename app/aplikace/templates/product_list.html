@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Users
+{% endblock %}
+
+{% block header %}
+    <ol class="breadcrumb">
+        <li><a href="{{ url_for('.list_products') }}">Aplikace</a></li>
+        <li class="active">Data</li>
+    </ol>
+{% endblock %}
+
+{% block body %}
+    <div id="pjax-container">
+        {% include 'products.html' %}
+    </div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
